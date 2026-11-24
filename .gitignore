@@ -1,0 +1,12 @@
+# Arquivos de sistema (macOS)
+.DS_Store
+
+# Governança interna e documentação (Web Agency AI)
+AGENTS.md
+GEMINI.md
+.agents/
+agents/
+docs/
+
+# Editor
+.vscode/

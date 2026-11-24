@@ -1,0 +1,61 @@
+/* ==========================================================================
+   DESIGN TOKENS — STUDIO MÃOS DE MIDAS (BOUTIQUE DARK)
+   ========================================================================== */
+
+:root {
+  /* Paleta Oficial (Ouro Metálico + Roxo-Chinês + Ciano Clínico) */
+  --color-bg: #0B0D10;
+  --color-surface: #141820;
+  --color-surface-elevated: #1C222D;
+  --color-text: #F4F5F7;
+  --color-text-muted: #A1A8B3;
+  --color-primary: #D4AF37;
+  --color-primary-hover: #E6C555;
+  --color-primary-rgb: 212, 175, 55;
+  --color-secondary: #7E4E96;
+  --color-secondary-light: #A472BD;
+  --color-secondary-rgb: 126, 78, 150;
+  --color-accent: #5EEAD4;
+
+  /* Gradientes e Brilhos */
+  --gradient-gold: linear-gradient(135deg, #E6C555 0%, #D4AF37 55%, #B88E28 100%);
+  --glow-purple: radial-gradient(circle, rgba(var(--color-secondary-rgb), 0.22) 0%, transparent 70%);
+
+  /* Bordas e Transparências */
+  --border-subtle: rgba(var(--color-primary-rgb), 0.18);
+  --border-strong: rgba(var(--color-primary-rgb), 0.42);
+  --border-purple: rgba(var(--color-secondary-rgb), 0.32);
+  --glass-bg: rgba(11, 13, 16, 0.82);
+
+  /* Tipografia (Máx. 2 famílias com fallback editorial imediato sem 404) */
+  --font-display: 'Cormorant Garamond', 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Escala Tipográfica Fluida */
+  --text-xs: 0.75rem;      /* 12px */
+  --text-sm: 0.875rem;     /* 14px */
+  --text-base: 1rem;       /* 16px */
+  --text-lg: 1.125rem;     /* 18px */
+  --text-xl: 1.375rem;     /* 22px */
+  --text-2xl: clamp(1.75rem, 3vw, 2.35rem);
+  --text-hero: clamp(2.4rem, 5vw, 4.1rem);
+
+  /* Espaçamento e Layout */
+  --container-max: 1200px;
+  --container-padding: clamp(1.25rem, 4vw, 2.5rem);
+  --section-space: clamp(4.5rem, 9vw, 7.5rem);
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  /* Sombras e Profundidade */
+  --shadow-card: 0 20px 40px -15px rgba(0, 0, 0, 0.65);
+  --shadow-glow: 0 0 32px rgba(var(--color-primary-rgb), 0.18);
+
+  /* Curvas de Motion Graphics */
+  --ease-luxury: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 220ms;
+  --duration-base: 420ms;
+  --duration-slow: 650ms;
+}

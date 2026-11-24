@@ -1,0 +1,109 @@
+/* ==========================================================================
+   VIEW TRANSITIONS & SCROLL REVEAL — STUDIO MÃOS DE MIDAS
+   =========================================================================== */
+
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-group(root) {
+  animation-duration: 480ms;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* View transition names */
+.vt-lentes-media {
+  view-transition-name: proc-lentes-media;
+}
+
+.vt-lentes-title {
+  view-transition-name: proc-lentes-title;
+}
+
+.vt-harmonizacao-media {
+  view-transition-name: proc-harmonizacao-media;
+}
+
+.vt-harmonizacao-title {
+  view-transition-name: proc-harmonizacao-title;
+}
+
+.vt-dual-media {
+  view-transition-name: proc-dual-media;
+}
+
+.vt-dual-title {
+  view-transition-name: proc-dual-title;
+}
+
+/* View transition groups */
+::view-transition-group(proc-lentes-media),
+::view-transition-group(proc-lentes-title),
+::view-transition-group(proc-harmonizacao-media),
+::view-transition-group(proc-harmonizacao-title),
+::view-transition-group(proc-dual-media),
+::view-transition-group(proc-dual-title) {
+  animation-duration: 500ms;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* Encaixe proporcional dos snapshots de mídia */
+::view-transition-old(proc-lentes-media),
+::view-transition-new(proc-lentes-media),
+::view-transition-old(proc-harmonizacao-media),
+::view-transition-new(proc-harmonizacao-media),
+::view-transition-old(proc-dual-media),
+::view-transition-new(proc-dual-media) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Reveal on scroll */
+.js-ready .reveal-on-scroll {
+  opacity: 0;
+  transform: translate3d(0, 22px, 0);
+  transition:
+    opacity var(--duration-slow) var(--ease-luxury),
+    transform var(--duration-slow) var(--ease-luxury);
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* SVG draw */
+.svg-draw-path {
+  stroke-dasharray: 680;
+  stroke-dashoffset: 680;
+  transition: stroke-dashoffset 1.2s var(--ease-luxury);
+}
+
+.reveal-on-scroll.is-visible .svg-draw-path,
+.anatomy-stage.is-drawn .svg-draw-path {
+  stroke-dashoffset: 0;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  @view-transition {
+    navigation: none;
+  }
+
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation-duration: 0.01ms !important;
+  }
+
+  .js-ready .reveal-on-scroll {
+    opacity: 1;
+    transform: none;
+  }
+
+  .svg-draw-path {
+    stroke-dashoffset: 0;
+  }
+}

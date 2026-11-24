@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio Mãos de Midas | Odontologia Estética &amp; Harmonização Orofacial</title>
+  <meta name="description" content="Protocolos exclusivos de odontologia estética e harmonização orofacial guiados por planejamento digital 3D para resultados naturais e harmônicos.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%230B0D10' stroke='%23C8A97E' stroke-width='2'/%3E%3Ctext x='16' y='21' text-anchor='middle' fill='%23C8A97E' font-family='serif' font-size='16' font-weight='bold'%3EM%3C/text%3E%3C/svg%3E">
+
+  <!-- Open Graph / Compartilhamento -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Studio Mãos de Midas | Odontologia Estética &amp; Harmonização Orofacial">
+  <meta property="og:description" content="Unimos precisão anatômica digital e sensibilidade artística para revelar a melhor versão do rosto e do sorriso com naturalidade absoluta.">
+  <meta property="og:image" content="assets/images/hero/hero-clinica.webp">
+
+  <!-- CSS Modular (CSP style-src 'self') -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/transitions.css">
+
+  <!-- Dados Estruturados SEO (Projeto Conceitual de Portfólio) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Studio Mãos de Midas",
+    "description": "Clínica conceitual de Odontologia Estética e Harmonização Orofacial com planejamento digital 3D.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Curitiba",
+      "addressRegion": "PR",
+      "addressCountry": "BR"
+    },
+    "medicalSpecialty": ["Cosmetic Dentistry", "Facial Aesthetics"]
+  }
+  </script>
+  <!-- Pré-renderização nativa no hover para View Transitions instantâneas (0 ms) -->
+  <script type="speculationrules">
+  {
+    "prerender": [
+      {
+        "source": "list",
+        "urls": [
+          "procedimentos/lentes-contato-dental.html",
+          "procedimentos/harmonizacao-orofacial.html",
+          "procedimentos/reabilitacao-estetica-dual.html"
+        ],
+        "eagerness": "moderate"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+  <!-- Cabeçalho -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menu de navegação">
+        <span class="menu-toggle-bar" aria-hidden="true"></span>
+        <span class="menu-toggle-bar" aria-hidden="true"></span>
+        <span class="menu-toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <a href="index.html" class="brand-logo" aria-label="Studio Mãos de Midas — Página Inicial">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span class="brand-text">
+          <span class="brand-name">Studio Mãos de Midas</span>
+          <span class="brand-tagline">Odontologia &amp; Harmonização 3D</span>
+        </span>
+      </a>
+
+      <nav id="mobile-nav" class="main-nav" aria-label="Navegação Principal">
+        <a class="nav-link" href="#especialidades">Especialidades</a>
+        <a class="nav-link" href="#anatomia">Anatomia 3D</a>
+        <a class="nav-link" href="#resultados">Simulador</a>
+        <a class="nav-link" href="#faq">Dúvidas</a>
+        <a class="btn btn-primary nav-cta" href="#agendamento">Agendar Avaliação 3D</a>
+      </nav>
+    </div>
+    <div class="demo-banner" role="note">
+      <div class="container demo-banner-inner">
+        <span>Site demonstrativo de portfólio — Conteúdo, protocolos e simulações exibidos apenas para fins ilustrativos.</span>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo-principal">
+    <!-- 1. Hero (LCP Otimizado — Renderização Imediata) -->
+    <section id="hero" class="hero" aria-labelledby="hero-titulo">
+      <img 
+        class="hero-bg" 
+        src="assets/images/hero/hero-bg.webp" 
+        alt="" 
+        aria-hidden="true" 
+        width="1600" 
+        height="900" 
+        decoding="async"
+      >
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="eyebrow">Boutique Clínica &amp; Precisão Digital</span>
+          <h1 id="hero-titulo" class="hero-title">
+            A arte da <span>proporção facial</span> e do sorriso.
+          </h1>
+          <p class="hero-subtitle">
+            Protocolos exclusivos de odontologia estética e harmonização orofacial guiados por planejamento digital 3D para resultados naturais e harmônicos.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#agendamento">Agendar Avaliação 3D</a>
+            <a class="btn btn-outline" href="#anatomia">Explorar Anatomia 3D</a>
+          </div>
+        </div>
+
+        <figure class="hero-media">
+          <img
+            src="assets/images/hero/hero-clinica.webp"
+            alt="Retrato editorial de paciente com iluminação dourada lateral destacando proporções faciais naturais e sorriso harmônico"
+            width="1280"
+            height="800"
+            fetchpriority="high"
+          >
+          <figcaption class="hero-badge">
+            <span class="hero-badge-dot" aria-hidden="true"></span>
+            <span>Escaneamento Intraoral &amp; Mapeamento Facial Digital em Alta Definição</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 2. Prova / Autoridade / Diferenciais Estruturais -->
+    <section class="metrics-bar" aria-label="Diferenciais Técnicos do Studio">
+      <div class="container metrics-grid">
+        <div class="metric-item">
+          <span class="metric-value">0,2 mm</span>
+          <span class="metric-label">Espessura mínima das lâminas cerâmicas ultra-finas</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-value">100% 3D</span>
+          <span class="metric-label">Previsibilidade digital antes de iniciar o procedimento</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-value">Dual Care</span>
+          <span class="metric-label">Integração entre estética dental e sustentação facial</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-value">Protocolo CFO</span>
+          <span class="metric-label">Rigor biosseguro e ética clínica em cada etapa</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Serviços / Soluções (Cards com View Transitions para Páginas Internas) -->
+    <section id="especialidades" class="section" aria-labelledby="titulo-especialidades">
+      <div class="container">
+        <header class="section-header reveal-on-scroll">
+          <span class="eyebrow">Especialidades Integradas</span>
+          <h2 id="titulo-especialidades" class="section-title">Arquitetura do sorriso e contorno facial</h2>
+          <p class="section-subtitle">
+            Selecione uma especialidade para explorar o protocolo clínico completo, etapas de execução e indicações técnicas.
+          </p>
+        </header>
+
+        <div class="cards-grid">
+          <!-- Card 1 -> Página Interna 1 -->
+          <article class="service-card">
+            <div class="service-card-media vt-lentes-media">
+              <span class="service-tag">Odontologia Estética</span>
+              <img
+                src="assets/images/procedimentos/lentes-porcelana.webp"
+                alt="Detalhe de sorriso com lentes de contato dental em porcelana translúcida"
+                width="800"
+                height="500"
+                decoding="sync"
+              >
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title vt-lentes-title">Lentes em Porcelana Ultra-Fina</h3>
+              <p class="service-card-desc">
+                Design digital do sorriso com desgaste dental mínimo ou nulo, preservando textura natural, opalescência e alinhamento funcional.
+              </p>
+              <a class="service-card-cta" href="procedimentos/lentes-contato-dental.html">
+                <span>Explorar protocolo clínico</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M5 12h14M13 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2 -> Página Interna 2 -->
+          <article class="service-card">
+            <div class="service-card-media vt-harmonizacao-media">
+              <span class="service-tag">Harmonização Orofacial</span>
+              <img
+                src="assets/images/procedimentos/harmonizacao-facial.webp"
+                alt="Perfil facial feminino iluminado evidenciando contorno mandibular e sustentação malar"
+                width="800"
+                height="500"
+                decoding="sync"
+              >
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title vt-harmonizacao-title">Harmonização &amp; Sustentação Facial</h3>
+              <p class="service-card-desc">
+                Reestruturação dos terços faciais com bioestimuladores de colágeno e preenchimento estratégico, sem exageros ou perda de expressão.
+              </p>
+              <a class="service-card-cta" href="procedimentos/harmonizacao-orofacial.html">
+                <span>Explorar protocolo clínico</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M5 12h14M13 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 3 -> Ancoragem para Simulador / Anatomia -->
+          <article class="service-card">
+            <div class="service-card-media vt-dual-media">
+              <span class="service-tag">Planejamento Integrado</span>
+              <img
+                src="assets/images/procedimentos/dual-reabilitacao.webp"
+                alt="Visão integrada da harmonia entre lábios, sorriso e estrutura facial"
+                width="800"
+                height="500"
+                decoding="sync"
+              >
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title vt-dual-title">Reabilitação Estética Dual</h3>
+              <p class="service-card-desc">
+                Sincronia entre suporte labial, dimensão vertical de oclusão e proporção áurea facial em um único plano diagnóstico integrado.
+              </p>
+              <a class="service-card-cta" href="procedimentos/reabilitacao-estetica-dual.html">
+                <span>Explorar protocolo clínico</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M5 12h14M13 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4A. Showcase Interativo: Infográfico Anatômico SVG Nativo -->
+    <section id="anatomia" class="section anatomy-section" aria-labelledby="titulo-anatomia">
+  <div class="container">
+    <header class="section-header reveal-on-scroll">
+      <span class="eyebrow">Engenharia Diagnóstica</span>
+      <h2 id="titulo-anatomia" class="section-title">Infográfico Anatômico Interativo</h2>
+      <p class="section-subtitle">
+        Alterne entre as vistas clínicas e selecione os pontos luminosos para inspecionar como atuamos em cada camada estrutural.
+      </p>
+    </header>
+
+    <div class="anatomy-tabs" role="tablist" aria-label="Selecionar modelo anatômico">
+      <button
+        type="button"
+        class="tab-btn"
+        role="tab"
+        id="tab-dental"
+        aria-selected="true"
+        aria-controls="panel-anatomia"
+        data-anatomy-mode="dental"
+      >
+        Estrutura Dental (Lâmina 0,2 mm)
+      </button>
+      <button
+        type="button"
+        class="tab-btn"
+        role="tab"
+        id="tab-facial"
+        aria-selected="false"
+        aria-controls="panel-anatomia"
+        data-anatomy-mode="facial"
+      >
+        Terços Faciais (Sustentação)
+      </button>
+    </div>
+
+    <div class="anatomy-grid reveal-on-scroll">
+      <div class="anatomy-stage" data-anatomy-stage>
+        <div class="anatomy-hud" aria-hidden="true">
+          <span class="anatomy-hud-badge" data-anatomy-hud>CAD/CAM 3D • CORTE SAGITAL</span>
+          <span class="anatomy-hud-scale">PRECISÃO 0,02 MM</span>
+        </div>
+
+        <!-- SVG 1: Corte Anatômico Dental em Camadas -->
+        <svg class="anatomy-svg" data-svg-model="dental" viewBox="0 0 340 360" role="img" aria-label="Diagrama vetorial de corte transversal de dente anterior com lâmina cerâmica de 0,2 milímetros">
+          <defs>
+            <linearGradient id="grad-dental-esmalte" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="var(--color-primary)" stop-opacity="0.24"/>
+              <stop offset="55%" stop-color="var(--color-primary)" stop-opacity="0.08"/>
+              <stop offset="100%" stop-color="#0B0D10" stop-opacity="0.02"/>
+            </linearGradient>
+            <linearGradient id="grad-dental-dentina" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#F4F5F7" stop-opacity="0.14"/>
+              <stop offset="100%" stop-color="var(--color-primary)" stop-opacity="0.04"/>
+            </linearGradient>
+            <linearGradient id="grad-dental-lamina" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#99F6E4"/>
+              <stop offset="50%" stop-color="#5EEAD4"/>
+              <stop offset="100%" stop-color="#2DD4BF"/>
+            </linearGradient>
+          </defs>
+
+          <!-- Eixos de referência clínica -->
+          <line x1="36" y1="194" x2="304" y2="194" stroke="var(--color-primary)" stroke-opacity="0.22" stroke-width="1" stroke-dasharray="3 4"/>
+          <text x="234" y="188" fill="var(--color-primary)" fill-opacity="0.72" font-size="9" letter-spacing="1.2">MARGEM GENGIVAL</text>
+
+          <!-- Camada 2: Contorno Anatômico do Dente (Esmalte) -->
+          <g class="anatomy-layer" data-layer="esmalte">
+            <path class="svg-draw-path" d="M124 52 C154 32, 206 38, 220 74 C232 104, 224 162, 206 212 L190 312 C186 324, 173 324, 168 307 L154 224 C128 198, 108 148, 112 92 C114 72, 115 58, 124 52 Z" fill="url(#grad-dental-esmalte)" stroke="var(--color-primary)" stroke-width="2"/>
+            <path class="svg-draw-path" d="M144 82 C164 70, 192 76, 198 100 C204 126, 196 172, 184 212 L174 274 L162 212 C146 186, 134 142, 137 106 C138 94, 140 86, 144 82 Z" fill="url(#grad-dental-dentina)" stroke="rgba(244, 245, 247, 0.34)" stroke-width="1.3" stroke-dasharray="4 4"/>
+          </g>
+
+          <!-- Camada 3: Contorno Gengival Suave -->
+          <g class="anatomy-layer" data-layer="gengiva">
+            <path d="M74 206 C100 188, 126 188, 148 206" fill="none" stroke="var(--color-primary)" stroke-width="2.4" stroke-linecap="round"/>
+            <circle cx="130" cy="194" r="24" fill="var(--color-primary)" fill-opacity="0.14" stroke="var(--color-primary)" stroke-opacity="0.45" stroke-width="1" stroke-dasharray="3 3"/>
+          </g>
+
+          <!-- Camada 1: Lâmina Cerâmica Ultra-Fina (Face Vestibular) -->
+          <g class="anatomy-layer is-active" data-layer="lamina">
+            <path class="svg-draw-path" d="M115 54 C103 86, 101 142, 123 190" fill="none" stroke="url(#grad-dental-lamina)" stroke-width="4.5" stroke-linecap="round"/>
+            <line x1="66" y1="118" x2="102" y2="118" stroke="rgba(94, 234, 212, 0.75)" stroke-width="1.2"/>
+            <text x="34" y="114" fill="#5EEAD4" font-size="10" font-weight="600">0,2 MM</text>
+            <text x="34" y="126" fill="rgba(244, 245, 247, 0.7)" font-size="8.5">LÂMINA</text>
+          </g>
+
+          <!-- Hotspot 1: Lâmina Cerâmica -->
+          <g class="hotspot-btn" tabindex="0" role="button" aria-pressed="true" aria-label="Inspecionar Lâmina Cerâmica 0,2 mm" data-hotspot="lamina">
+            <circle class="hotspot-hit" cx="107" cy="118" r="22" fill="transparent"/>
+            <circle class="hotspot-pulse" cx="107" cy="118" r="14"/>
+            <circle class="hotspot-core" cx="107" cy="118" r="5"/>
+          </g>
+
+          <!-- Hotspot 2: Esmalte Natural -->
+          <g class="hotspot-btn" tabindex="0" role="button" aria-pressed="false" aria-label="Inspecionar Preservação de Esmalte" data-hotspot="esmalte">
+            <circle class="hotspot-hit" cx="168" cy="66" r="22" fill="transparent"/>
+            <circle class="hotspot-pulse" cx="168" cy="66" r="14"/>
+            <circle class="hotspot-core" cx="168" cy="66" r="5"/>
+          </g>
+
+          <!-- Hotspot 3: Margem Gengival -->
+          <g class="hotspot-btn" tabindex="0" role="button" aria-pressed="false" aria-label="Inspecionar Adaptação Gengival" data-hotspot="gengiva">
+            <circle class="hotspot-hit" cx="130" cy="194" r="22" fill="transparent"/>
+            <circle class="hotspot-pulse" cx="130" cy="194" r="14"/>
+            <circle class="hotspot-core" cx="130" cy="194" r="5"/>
+          </g>
+        </svg>
+
+        <!-- SVG 2: Perfil Anatômico Facial por Terços -->
+        <svg class="anatomy-svg" data-svg-model="facial" viewBox="0 0 340 360" hidden role="img" aria-label="Diagrama vetorial de perfil facial dividido em terços superior, médio e inferior">
+          <defs>
+            <linearGradient id="grad-facial-ouro" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="var(--color-primary)" stop-opacity="0.22"/>
+              <stop offset="100%" stop-color="#0B0D10" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+
+          <!-- Faixas de destaque aditivo por terço facial -->
+          <rect class="anatomy-layer" data-layer="terco-superior" x="48" y="34" width="214" height="72" rx="8" fill="var(--color-primary)" fill-opacity="0.12" stroke="var(--color-primary)" stroke-opacity="0.4" stroke-width="1"/>
+          <rect class="anatomy-layer" data-layer="terco-medio" x="48" y="106" width="214" height="66" rx="8" fill="rgba(94, 234, 212, 0.1)" stroke="rgba(94, 234, 212, 0.4)" stroke-width="1"/>
+          <rect class="anatomy-layer" data-layer="terco-inferior" x="48" y="172" width="214" height="70" rx="8" fill="var(--color-primary)" fill-opacity="0.12" stroke="var(--color-primary)" stroke-opacity="0.4" stroke-width="1"/>
+
+          <!-- Área de volume facial sutil -->
+          <path d="M135 34 L182 34 C222 39, 238 72, 234 106 L248 146 C250 152, 244 157, 234 159 L240 176 L232 186 L239 198 C238 216, 228 236, 208 242 C190 246, 174 240, 168 256 L164 312 L135 312 Z" fill="url(#grad-facial-ouro)"/>
+
+          <!-- Linha de Perfil Facial Esculpida -->
+          <path class="svg-draw-path" d="M182 34 C222 39, 238 72, 234 106 L248 146 C250 152, 244 157, 234 159 L240 176 L232 186 L239 198 C238 216, 228 236, 208 242 C190 246, 174 240, 168 256 L164 312" fill="none" stroke="var(--color-primary)" stroke-width="2.3" stroke-linecap="round"/>
+
+          <!-- Vetores de Sustentação (Malar e Mandibular) -->
+          <path d="M174 154 Q202 146 226 134" fill="none" stroke="#5EEAD4" stroke-width="1.6" stroke-dasharray="3 3"/>
+          <path d="M168 214 Q196 224 226 218" fill="none" stroke="#5EEAD4" stroke-width="1.6" stroke-dasharray="3 3"/>
+
+          <!-- Linhas Guias e Rótulos dos Terços Faciais -->
+          <line x1="48" y1="106" x2="262" y2="106" stroke="rgba(244, 245, 247, 0.25)" stroke-width="1" stroke-dasharray="5 5"/>
+          <text x="56" y="99" fill="rgba(244, 245, 247, 0.72)" font-size="8.5" letter-spacing="1">1/3 SUPERIOR</text>
+
+          <line x1="48" y1="172" x2="262" y2="172" stroke="rgba(244, 245, 247, 0.25)" stroke-width="1" stroke-dasharray="5 5"/>
+          <text x="56" y="165" fill="rgba(244, 245, 247, 0.72)" font-size="8.5" letter-spacing="1">1/3 MÉDIO</text>
+
+          <line x1="48" y1="242" x2="262" y2="242" stroke="rgba(244, 245, 247, 0.25)" stroke-width="1" stroke-dasharray="5 5"/>
+          <text x="56" y="235" fill="rgba(244, 245, 247, 0.72)" font-size="8.5" letter-spacing="1">1/3 INFERIOR</text>
+
+          <!-- Hotspot 1: Terço Superior -->
+          <g class="hotspot-btn" tabindex="0" role="button" aria-pressed="true" aria-label="Inspecionar Terço Superior" data-hotspot="terco-superior">
+            <circle class="hotspot-hit" cx="218" cy="76" r="22" fill="transparent"/>
+            <circle class="hotspot-pulse" cx="218" cy="76" r="14"/>
+            <circle class="hotspot-core" cx="218" cy="76" r="5"/>
+          </g>
+
+          <!-- Hotspot 2: Terço Médio (Malar) -->
+          <g class="hotspot-btn" tabindex="0" role="button" aria-pressed="false" aria-label="Inspecionar Sustentação Malar" data-hotspot="terco-medio">
+            <circle class="hotspot-hit" cx="202" cy="140" r="22" fill="transparent"/>
+            <circle class="hotspot-pulse" cx="202" cy="140" r="14"/>
+            <circle class="hotspot-core" cx="202" cy="140" r="5"/>
+          </g>
+
+          <!-- Hotspot 3: Terço Inferior (Mandíbula) -->
+          <g class="hotspot-btn" tabindex="0" role="button" aria-pressed="false" aria-label="Inspecionar Contorno Mandibular" data-hotspot="terco-inferior">
+            <circle class="hotspot-hit" cx="192" cy="216" r="22" fill="transparent"/>
+            <circle class="hotspot-pulse" cx="192" cy="216" r="14"/>
+            <circle class="hotspot-core" cx="192" cy="216" r="5"/>
+          </g>
+        </svg>
+      </div>
+
+      <aside id="panel-anatomia" class="anatomy-panel" aria-live="polite">
+        <span class="anatomy-zone-tag" data-anatomy-tag>Camada 01 • Odontologia Digital</span>
+        <h3 class="anatomy-panel-title" data-anatomy-title>Lâmina Cerâmica Ultra-Fina (0,2 mm)</h3>
+        <p class="anatomy-panel-text" data-anatomy-desc>
+          Projetada em CAD/CAM a partir do escaneamento intraoral, a lente mimetiza a translucidez incisal e a microtextura do dente natural sem comprometer a estrutura sadia.
+        </p>
+        <ul class="anatomy-specs">
+          <li>
+            <span>Material Indicado</span>
+            <span data-anatomy-spec1>Dissilicato de Lítio Estratificado</span>
+          </li>
+          <li>
+            <span>Preservação Estrutural</span>
+            <span data-anatomy-spec2>95% a 100% do esmalte intacto</span>
+          </li>
+          <li>
+            <span>Sessões Clínicas</span>
+            <span data-anatomy-spec3>2 a 3 encontros planejados</span>
+          </li>
+        </ul>
+        <div class="anatomy-panel-footer">
+          <a class="service-card-cta" data-anatomy-link href="procedimentos/lentes-contato-dental.html">
+            <span data-anatomy-link-text>Explorar protocolo de Lentes</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M5 12h14M13 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+    <!-- 4B. Showcase Interativo: Comparador Antes & Depois com Física Spring -->
+    <section id="resultados" class="section" aria-labelledby="titulo-comparador">
+      <div class="container">
+        <header class="section-header reveal-on-scroll">
+          <span class="eyebrow">Simulação Visual Interativa</span>
+          <h2 id="titulo-comparador" class="section-title">Comparador de Proporção &amp; Harmonia</h2>
+          <p class="section-subtitle">
+            Arraste o controle central (ou use as setas do teclado) para comparar o planejamento inicial e a finalização estética.
+          </p>
+        </header>
+
+        <div class="comparator-wrapper reveal-on-scroll">
+          <div class="comparator-controls" role="group" aria-label="Selecionar caso demonstrativo">
+            <button type="button" class="btn btn-primary" data-case-btn="sorriso" aria-pressed="true">
+              Caso 01: Lentes de Contato Dental
+            </button>
+            <button type="button" class="btn btn-outline" data-case-btn="facial" aria-pressed="false">
+              Caso 02: Sustentação Facial 3D
+            </button>
+          </div>
+
+          <div
+            class="ba-stage"
+            data-ba-stage
+            role="slider"
+            tabindex="0"
+            aria-label="Comparador interativo Antes e Depois"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            aria-valuenow="50"
+          >
+            <!-- Camada Base: Depois -->
+            <div class="ba-layer ba-layer-after">
+              <img
+                data-ba-after-img
+                src="assets/images/comparador/sorriso-depois.webp"
+                alt="Simulação estética após protocolo de lentes em porcelana ultra-fina"
+                width="960"
+                height="720"
+              >
+              <span class="ba-label ba-label-after">Depois</span>
+            </div>
+
+            <!-- Camada Superior Recortada: Antes -->
+            <div class="ba-layer ba-layer-before" data-ba-before-layer>
+              <img
+                data-ba-before-img
+                src="assets/images/comparador/sorriso-antes.webp"
+                alt="Registro inicial antes do planejamento estético"
+                width="960"
+                height="720"
+              >
+              <span class="ba-label ba-label-before">Antes</span>
+            </div>
+
+            <!-- Divisor com Inércia Spring -->
+            <div class="ba-divider" data-ba-divider aria-hidden="true">
+              <div class="ba-handle">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M8 9l-3 3 3 3M16 9l3 3-3 3"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <p class="compliance-note" role="note">
+            <strong>Aviso Ético e Regulamentar (Resolução CFO 196/2019):</strong> As imagens apresentadas nesta demonstração possuem caráter exclusivamente educativo e ilustrativo de portfólio conceitual. Em tratamentos clínicos reais, os resultados variam conforme as condições anatômicas, biológicas e funcionais de cada paciente. Projeto conceitual sem vínculo com clínica ou profissional médico/odontológico real.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Depoimentos Éticos -->
+    <section class="section" aria-labelledby="titulo-depoimentos">
+      <div class="container">
+        <header class="section-header reveal-on-scroll">
+          <span class="eyebrow">Experiência do Paciente</span>
+          <h2 id="titulo-depoimentos" class="section-title">Previsibilidade e acolhimento em cada etapa</h2>
+        </header>
+
+        <div class="testimonials-grid">
+          <blockquote class="testimonial-card reveal-on-scroll">
+            <p class="testimonial-quote">
+              “Poder visualizar a simulação 3D do meu sorriso antes mesmo de tocar nos dentes trouxe uma segurança enorme. O acabamento ficou tão natural que ninguém diz que são lentes.”
+            </p>
+            <footer class="testimonial-author">Relato Ilustrativo 01 — Curitiba, PR</footer>
+            <span class="testimonial-meta">Protocolo de Lentes em Porcelana Ultra-Fina</span>
+          </blockquote>
+
+          <blockquote class="testimonial-card reveal-on-scroll">
+            <p class="testimonial-quote">
+              “Meu maior receio com harmonização era perder minhas expressões. O planejamento respeitou cada traço do meu rosto, devolvendo descanso e contorno com muita sutileza.”
+            </p>
+            <footer class="testimonial-author">Relato Ilustrativo 02 — Curitiba, PR</footer>
+            <span class="testimonial-meta">Bioestimulação &amp; Sustentação de Terço Médio</span>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. FAQ (Acordeão Suave) -->
+    <section id="faq" class="section" aria-labelledby="titulo-faq">
+      <div class="container">
+        <header class="section-header reveal-on-scroll">
+          <span class="eyebrow">Esclarecimentos Clínicos</span>
+          <h2 id="titulo-faq" class="section-title">Perguntas Frequentes</h2>
+        </header>
+
+        <div class="faq-list" data-faq-list>
+          <article class="faq-item" data-open="false">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M9 6l6 6-6 6"/>
+              </svg>
+              <span>As lentes de contato dental exigem desgaste significativo dos dentes?</span>
+            </button>
+            <div class="faq-panel">
+              <p class="faq-panel-inner">
+                Não. Com o planejamento digital 3D e cerâmicas de 0,2 mm a 0,4 mm, realizamos apenas microajustes seletivos no esmalte quando estritamente necessários para garantir eixo de inserção e adaptação marginal perfeita.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-open="false">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M9 6l6 6-6 6"/>
+              </svg>
+              <span>Como funciona a consulta de Avaliação Diagnóstica 3D?</span>
+            </button>
+            <div class="faq-panel">
+              <p class="faq-panel-inner">
+                Na primeira sessão realizamos fotografias de estúdio, escaneamento intraoral sem moldagens desconfortáveis e análise das proporções faciais em repouso e movimento, apresentando um plano personalizado antes de qualquer intervenção.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-open="false">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M9 6l6 6-6 6"/>
+              </svg>
+              <span>É possível combinar lentes dentais e harmonização orofacial no mesmo plano?</span>
+            </button>
+            <div class="faq-panel">
+              <p class="faq-panel-inner">
+                Sim. O suporte labial e a exposição dos dentes incisivos estão diretamente conectados. Planejar ambos em conjunto evita sobrecorreções labiais e garante equilíbrio estético global.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section id="agendamento" class="section" aria-labelledby="titulo-cta">
+      <div class="container">
+        <div class="cta-banner reveal-on-scroll">
+          <span class="eyebrow">Atendimento Exclusivo com Hora Marcada</span>
+          <h2 id="titulo-cta" class="cta-banner-title">Inicie seu diagnóstico digital personalizado</h2>
+          <p class="cta-banner-text">
+            Agende uma avaliação individual para conhecer a simulação 3D do seu sorriso e das suas proporções faciais.
+          </p>
+          <a
+            class="btn btn-primary"
+            href="#aviso-demonstrativo"
+            data-demo-cta
+          >
+            Agendar via WhatsApp VIP
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé Institucional -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <strong class="brand-name">Studio Mãos de Midas</strong>
+          <p>Odontologia Estética &amp; Harmonização Orofacial de Alta Precisão.</p>
+          <p>Curitiba, PR — Ambiente Conceitual de Portfólio</p>
+        </div>
+        <div>
+          <p><strong>Natureza do Projeto:</strong> Demonstração Conceitual</p>
+          <p>Arquitetura Web, UI/UX e Planejamento Digital 3D</p>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <span>© 2026 Studio Mãos de Midas — Projeto Conceitual de Portfólio (Web Agency AI).</span>
+        <span>Desenvolvido com Arquitetura Nativa, Segurança CSP &amp; Acessibilidade WCAG AA.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Modular (CSP script-src 'self') -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
