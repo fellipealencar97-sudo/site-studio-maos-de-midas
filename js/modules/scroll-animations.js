@@ -2,15 +2,21 @@ export function initScrollAnimations() {
   // Indica que o JavaScript está pronto – habilita estilos dependentes
   document.documentElement.classList.add('js-ready');
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-      }
-    });
-  }, { threshold: 0.15 });
+  const revealElements = document.querySelectorAll('.reveal-on-scroll');
 
-  document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+  if (!('IntersectionObserver' in window)) {
+    revealElements.forEach(el => el.classList.add('is-visible'));
+  } else {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    revealElements.forEach(el => observer.observe(el));
+  }
 
   // Abertura do Hero: animar apenas conteúdo textual e mídia já presente na página.
   const hero = document.querySelector('.hero');

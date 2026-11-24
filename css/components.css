@@ -951,7 +951,6 @@ body.nav-open .site-header {
   transition: border-color var(--duration-fast) var(--ease-luxury);
 }
 
-.faq-item[data-open="true"],
 .faq-item.is-open {
   border-color: var(--border-strong);
 }
@@ -976,7 +975,6 @@ body.nav-open .site-header {
   transition: transform var(--duration-base) var(--ease-luxury);
 }
 
-.faq-item[data-open="true"] .faq-icon,
 .faq-item.is-open .faq-icon {
   transform: rotate(90deg);
 }

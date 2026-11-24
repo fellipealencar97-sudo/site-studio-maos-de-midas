@@ -8,5 +8,9 @@ GEMINI.md
 agents/
 docs/
 
+# Segurança: variáveis de ambiente e credenciais locais
+.env
+.env.*
+
 # Editor
 .vscode/

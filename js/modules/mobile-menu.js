@@ -28,18 +28,22 @@ export function initMobileMenu() {
 
   const openMenu = () => {
     toggleBtn.setAttribute('aria-expanded', 'true');
+    toggleBtn.setAttribute('aria-label', 'Fechar menu');
     toggleBtn.classList.add('is-active');
     mainNav.classList.add('is-open');
     backdrop.classList.add('is-visible');
     document.body.classList.add('nav-open');
+    if (window.innerWidth <= 768) closeBtn.focus();
   };
 
   const closeMenu = () => {
     toggleBtn.setAttribute('aria-expanded', 'false');
+    toggleBtn.setAttribute('aria-label', 'Abrir menu');
     toggleBtn.classList.remove('is-active');
     mainNav.classList.remove('is-open');
     backdrop.classList.remove('is-visible');
     document.body.classList.remove('nav-open');
+    if (window.innerWidth <= 768) toggleBtn.focus();
   };
 
   toggleBtn.addEventListener('click', () => {

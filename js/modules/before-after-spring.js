@@ -2,7 +2,6 @@
 export function initBeforeAfterSpring() {
   const stage = document.querySelector('.ba-stage');
   const divider = document.querySelector('.ba-divider');
-  const handle = divider?.querySelector('.ba-handle');
   const caseButtons = document.querySelectorAll('[data-case-btn]');
 
   if (!stage || !divider) return;
@@ -72,12 +71,18 @@ export function initBeforeAfterSpring() {
       // Show/hide appropriate images via data attributes (simple implementation)
       const beforeImg = document.querySelector('[data-ba-before-img]');
       const afterImg = document.querySelector('[data-ba-after-img]');
+      if (!beforeImg || !afterImg) return;
+
       if (caseId === 'sorriso') {
         beforeImg.src = 'assets/images/comparador/sorriso-antes.webp';
+        beforeImg.alt = 'Registro inicial antes do planejamento estético do sorriso';
         afterImg.src = 'assets/images/comparador/sorriso-depois.webp';
+        afterImg.alt = 'Simulação estética após protocolo de lentes em porcelana ultra-fina';
       } else if (caseId === 'facial') {
         beforeImg.src = 'assets/images/comparador/facial-antes.jpg';
+        beforeImg.alt = 'Registro facial antes do planejamento de harmonização orofacial';
         afterImg.src = 'assets/images/comparador/facial-depois.jpg';
+        afterImg.alt = 'Simulação facial após planejamento de harmonização orofacial';
       }
       // Reset slider to middle
       setValue(50);
