@@ -69,6 +69,15 @@
     transform var(--duration-slow) var(--ease-luxury);
 }
 
+/* O reveal dos cards usa opacidade; o transform permanece sob controle do hover. */
+.js-ready .service-card.reveal-on-scroll {
+  transform: none;
+}
+
+.js-ready .service-card.reveal-on-scroll.is-visible {
+  transform: none;
+}
+
 .reveal-on-scroll.is-visible {
   opacity: 1;
   transform: translate3d(0, 0, 0);
@@ -101,6 +110,10 @@
   .js-ready .reveal-on-scroll {
     opacity: 1;
     transform: none;
+  }
+
+  .js-ready .service-card.reveal-on-scroll {
+    opacity: 1;
   }
 
   .svg-draw-path {
